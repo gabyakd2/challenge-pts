@@ -37,3 +37,32 @@ padding: 10px 20px;
 margin-left: 10px;
 cursor: pointer;
 `;
+
+export const CardContainer = styled.div`
+  width: 300px;
+  max-height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  // padding: 16px;
+`;
+
+export const ImageCard = styled.img`
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+`;
+
+export const TextBody = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+`;
+
+export const TextCard = styled.p`
+  margin: 10px 0;
+  font-size: 16px;
+`;
