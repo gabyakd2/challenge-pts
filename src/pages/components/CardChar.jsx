@@ -5,14 +5,15 @@ import {
   TextCard,
 } from "../../styledComponents/StyledComponents";
 
-function CardChar() {
+// eslint-disable-next-line react/prop-types
+function CardChar({image, name, status, location}) {
   return (
     <CardContainer>
-      <ImageCard src="https://picsum.photos/200/300" alt="image" />
-      <TextCard>pj</TextCard>
+      <ImageCard src={image} alt="image" />
+      <TextCard>{name}</TextCard>
       <TextBody>
-        <TextCard>vivo</TextCard>
-        <TextCard>desconocido</TextCard>
+        <TextCard>{status}</TextCard>
+        <TextCard>{location}</TextCard>
       </TextBody>
     </CardContainer>
   );

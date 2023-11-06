@@ -1,10 +1,10 @@
-import CardChar from "./components/CardChar"
+import CharList from "./components/CharList"
 
 
 function Home() {
   return (
     <div>
-      <CardChar />
+      <CharList />
     </div>
   )
 }

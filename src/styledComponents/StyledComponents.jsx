@@ -8,7 +8,8 @@ export const NavbarContainer = styled.nav`
   color: white;
   padding: 10px;
 
-  @media (max-width: 768px) { /* Cambiar la posición en pantallas más pequeñas (por ejemplo, 768px) */
+  @media (max-width: 768px) {
+    /* Cambiar la posición en pantallas más pequeñas (por ejemplo, 768px) */
     // flex-direction: column;
     position: fixed;
     bottom: 0;
@@ -31,11 +32,26 @@ export const ButtonsContainerNav = styled.div`
 `;
 
 export const ButtonNav = styled.p`
-color: #12ADC4;
-font-weight: bold;
-padding: 10px 20px;
-margin-left: 10px;
-cursor: pointer;
+  color: #12adc4;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+`;
+
+export const ParentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ListCardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); // Aquí definimos 3 columnas con el mismo ancho.
+  gap: 20px; 
 `;
 
 export const CardContainer = styled.div`
